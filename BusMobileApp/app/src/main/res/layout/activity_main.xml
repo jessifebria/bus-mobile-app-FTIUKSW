@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.ftiuksw.busmobileapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="13">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btntofti"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/bgbtnroute"
+            android:text="UKSW to FTI"
+            android:textColor="@color/blue"
+            android:theme="@style/SuperSmallStyle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btntouksw"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="FTI to UKSW"
+            android:textColor="@color/blue"
+            android:background="@drawable/bgbtnroute"
+            android:theme="@style/SuperSmallStyle" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Tap on the schedule area you want!" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_weight="60">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:background="@drawable/border"
+            android:divider="#F5F9FA"
+            android:dividerHeight="8dp"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        android:layout_weight="27"
+        >
+
+        <ImageView
+            android:id="@+id/btnhome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtnroute"
+            android:src="@drawable/bus"
+            android:padding="5dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:theme="@style/SuperSmallStyle" />
+
+        <ImageView
+            android:id="@+id/btnupcoming"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtnroute"
+            android:src="@drawable/clock"
+            android:padding="5dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:theme="@style/SuperSmallStyle" />
+
+        <ImageView
+            android:id="@+id/btndone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtnroute"
+            android:src="@drawable/done"
+            android:padding="5dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:theme="@style/SuperSmallStyle" />
+    </LinearLayout>
+
+</LinearLayout>

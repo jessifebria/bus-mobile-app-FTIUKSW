@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.ftiuksw.busmobileapp.DoneActivity">
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="History of your bus that has passed" />
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Keep using bus! You save our air!" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_weight="90">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:background="@drawable/border"
+            android:divider="#E9F2F3"
+            android:dividerHeight="8dp"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        android:layout_weight="10"
+        >
+
+        <ImageView
+            android:id="@+id/btnhome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtnroute"
+            android:src="@drawable/bus"
+            android:padding="5dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:theme="@style/SuperSmallStyle" />
+
+        <ImageView
+            android:id="@+id/btnupcoming"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtnroute"
+            android:src="@drawable/clock"
+            android:padding="5dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:theme="@style/SuperSmallStyle" />
+
+        <ImageView
+            android:id="@+id/btndone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgbtnroute"
+            android:src="@drawable/done"
+            android:padding="5dp"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:theme="@style/SuperSmallStyle" />
+    </LinearLayout>
+
+</LinearLayout>

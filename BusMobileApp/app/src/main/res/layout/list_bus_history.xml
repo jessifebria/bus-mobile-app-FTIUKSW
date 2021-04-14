@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_margin="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:theme="@style/SmallStyle"/>
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:theme="@style/SuperSmallStyle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="20dp"
+            android:maxHeight="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="end|center"
+            android:text="TextView"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:theme="@style/SuperSmallStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/arrivaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:theme="@style/DescriptionStyle" />
+
+        <TextView
+            android:id="@+id/departuretime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:theme="@style/DescriptionStyle"/>
+
+        <TextView
+            android:id="@+id/seat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:theme="@style/DescriptionStyle"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/descarrivaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival Time"
+            android:gravity="center"
+            android:theme="@style/SuperSmallStyle" />
+
+        <TextView
+            android:id="@+id/descdeparturetime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Departure Time"
+            android:gravity="center"
+            android:theme="@style/SuperSmallStyle"/>
+
+        <TextView
+            android:id="@+id/descseatno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Seat Number"
+            android:theme="@style/SuperSmallStyle"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/datebook"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Available Capacity"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:theme="@style/SuperSmallStyle"/>
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnbook"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_gravity="right"-->
+<!--        android:text="Book"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:focusable="false"-->
+<!--        android:focusableInTouchMode="false"-->
+<!--        android:background="@drawable/bg"-->
+<!--        android:theme="@style/SmallStyle" />-->
+</LinearLayout>
